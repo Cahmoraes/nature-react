@@ -6,7 +6,7 @@ const Routes: React.FC = () => {
   return (
     <>
       <Route path="/" component={Home} exact />
-      <Route path="nature-react" component={Home} exact />
+      <Route path="/nature-react" component={Home} exact />
     </>
   )
 }
