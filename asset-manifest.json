@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.js": "/nature-react/static/js/main.db6450d5.chunk.js",
+    "main.js.map": "/nature-react/static/js/main.db6450d5.chunk.js.map",
+    "runtime-main.js": "/nature-react/static/js/runtime-main.887620a6.js",
+    "runtime-main.js.map": "/nature-react/static/js/runtime-main.887620a6.js.map",
+    "static/js/2.a5245c3b.chunk.js": "/nature-react/static/js/2.a5245c3b.chunk.js",
+    "static/js/2.a5245c3b.chunk.js.map": "/nature-react/static/js/2.a5245c3b.chunk.js.map",
+    "index.html": "/nature-react/index.html",
+    "static/js/2.a5245c3b.chunk.js.LICENSE.txt": "/nature-react/static/js/2.a5245c3b.chunk.js.LICENSE.txt",
+    "static/media/estrada.1e6f3dc7.jpg": "/nature-react/static/media/estrada.1e6f3dc7.jpg",
+    "static/media/firefox.c03901fa.jpg": "/nature-react/static/media/firefox.c03901fa.jpg",
+    "static/media/fox.3e48814a.jpg": "/nature-react/static/media/fox.3e48814a.jpg",
+    "static/media/montanha.f0a3609b.jpg": "/nature-react/static/media/montanha.f0a3609b.jpg",
+    "static/media/monte.17d41f88.jpg": "/nature-react/static/media/monte.17d41f88.jpg",
+    "static/media/pico.55bf011f.jpg": "/nature-react/static/media/pico.55bf011f.jpg",
+    "static/media/slide-1.680103dc.jpg": "/nature-react/static/media/slide-1.680103dc.jpg",
+    "static/media/slide-2.80bd31de.jpg": "/nature-react/static/media/slide-2.80bd31de.jpg",
+    "static/media/slide-3.4d48a4dd.jpg": "/nature-react/static/media/slide-3.4d48a4dd.jpg",
+    "static/media/sol.52a30a24.jpg": "/nature-react/static/media/sol.52a30a24.jpg",
+    "static/media/verde.5c87aa81.jpg": "/nature-react/static/media/verde.5c87aa81.jpg",
+    "static/media/wolf.3206f72e.jpg": "/nature-react/static/media/wolf.3206f72e.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.887620a6.js",
+    "static/js/2.a5245c3b.chunk.js",
+    "static/js/main.db6450d5.chunk.js"
+  ]
+}
