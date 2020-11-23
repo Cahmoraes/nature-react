@@ -32,7 +32,7 @@ export const Header = styled.header`
           width: 0;
           transition: .3s;
         }
-        &:hover::after {
+        &:hover::after, &.active::after {
           width: 100%;
         }
       }

@@ -33,7 +33,7 @@ const ContentList: React.FC<IContentListProps> = ({ title, itemsList, menuList, 
   }, [])
 
   return (
-    <Container id={id}>
+    <Container id={id} data-section={id}>
       <h1>{title}</h1>
       <TabMenu>
         {

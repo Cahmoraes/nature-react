@@ -9,13 +9,13 @@ import {
 
 const Header: React.FC = () => {
   return (
-    <HeaderContainer>
+    <HeaderContainer data-menu>
       <Logo onClick={animateScroll.scrollToTop} to="/">Nature</Logo>
       <nav>
         <ul>
-          <li><Link smooth={true} offset={-10} to="animais">Animais</Link></li>
-          <li><Link smooth={true} offset={-10} to="florestas">Florestas</Link></li>
-          <li><Link smooth={true} offset={-10} to="montanhas">Montanhas</Link></li>
+          <li><Link smooth={true} offset={-10} to="animais" data-menu="animais">Animais</Link></li>
+          <li><Link smooth={true} offset={-10} to="florestas" data-menu="florestas">Florestas</Link></li>
+          <li><Link smooth={true} offset={-10} to="montanhas" data-menu="montanhas">Montanhas</Link></li>
         </ul>
       </nav>
     </HeaderContainer>
