@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/nature-react/static/js/main.a78a5ef7.chunk.js",
-    "main.js.map": "/nature-react/static/js/main.a78a5ef7.chunk.js.map",
+    "main.js": "/nature-react/static/js/main.9a0c45dd.chunk.js",
+    "main.js.map": "/nature-react/static/js/main.9a0c45dd.chunk.js.map",
     "runtime-main.js": "/nature-react/static/js/runtime-main.887620a6.js",
     "runtime-main.js.map": "/nature-react/static/js/runtime-main.887620a6.js.map",
     "static/js/2.a5245c3b.chunk.js": "/nature-react/static/js/2.a5245c3b.chunk.js",
@@ -24,6 +24,6 @@
   "entrypoints": [
     "static/js/runtime-main.887620a6.js",
     "static/js/2.a5245c3b.chunk.js",
-    "static/js/main.a78a5ef7.chunk.js"
+    "static/js/main.9a0c45dd.chunk.js"
   ]
 }
