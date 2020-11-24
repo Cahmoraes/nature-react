@@ -27,6 +27,7 @@ export const TabMenu = styled.ul`
 
   &.active {
     opacity: 1;
+    visibility: initial;
     transform: initial;
   }
 
