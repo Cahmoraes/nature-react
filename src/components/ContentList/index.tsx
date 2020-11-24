@@ -1,4 +1,5 @@
-import React, { useCallback, useState, MouseEvent } from 'react'
+import React, { useCallback, useState, MouseEvent, useEffect, useRef } from 'react'
+import debounce from '../../utils'
 
 import { Container, TabMenu, Item } from './styles'
 
@@ -24,7 +25,31 @@ interface IMenuList {
 
 const ContentList: React.FC<IContentListProps> = ({ title, itemsList, menuList, id, op = 'vertical' }) => {
 
+  const containerRef = useRef<HTMLElement>()
+  const menuRef = useRef<HTMLElement>()
   const [activeItem, setActiveItem] = useState(menuList[0].itemMenu)
+
+  const handleShowContent = useCallback(() => {
+    const offsetTop = containerRef.current?.offsetTop as any
+    const menuHeight = menuRef.current?.offsetHeight as any
+
+    if ((window.pageYOffset + menuHeight * 3) > (offsetTop)) {
+      containerRef.current?.classList.add('active')
+    }
+  }, [])
+
+  useEffect(() => {
+    containerRef.current = document.querySelector(`[data-tabmenu='${id}']`) as HTMLElement
+    menuRef.current = document.querySelector('[data-menu]') as HTMLElement
+  }, [id])
+
+  useEffect(() => {
+    const debounceHandleShowContent = debounce(handleShowContent)
+    window.addEventListener('scroll', debounceHandleShowContent)
+    return () => {
+      window.removeEventListener('scroll', debounceHandleShowContent)
+    }
+  }, [handleShowContent])
 
   const changeItemMenu = useCallback((event: MouseEvent<HTMLAnchorElement>) => {
     event.preventDefault()
@@ -34,8 +59,8 @@ const ContentList: React.FC<IContentListProps> = ({ title, itemsList, menuList, 
 
   return (
     <Container id={id} data-section={id}>
-      <h1>{title}</h1>
-      <TabMenu>
+      <TabMenu data-tabmenu={id}>
+        <h1>{title}</h1>
         {
           menuList.map(item => (
             <li key={item.itemMenu}>

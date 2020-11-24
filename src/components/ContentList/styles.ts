@@ -19,6 +19,17 @@ export const Container = styled.section`
 export const TabMenu = styled.ul`
   text-align: center;
   margin: 20px 0 40px 0;
+  opacity: 0;
+  transform: translate3d(0, -30px, 0);
+  transition: .3s ease-in;
+
+
+  &.active {
+    opacity: 1;
+    transform: initial;
+  }
+
+
   li {
     display: inline-block;
     a {

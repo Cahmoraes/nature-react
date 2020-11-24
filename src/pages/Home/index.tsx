@@ -25,7 +25,6 @@ const Home: React.FC = () => {
   const sectionsRef = useRef<NodeListOf<HTMLElement>>()
 
   const animaWindowScroll = useCallback(() => {
-    console.log('aqui')
     const menu = document.querySelector('[data-menu]') as HTMLElement
     const menuHeight = menu.offsetHeight
     sectionsRef.current?.forEach(section => {
@@ -42,7 +41,6 @@ const Home: React.FC = () => {
   const addEventScroll = useCallback(() => {
     const animaScrollDebounce = debounce(animaWindowScroll)
     if (!document.body.hasAttribute('data-anima-scroll')) {
-      console.log('if')
       window.addEventListener('scroll', animaScrollDebounce)
       document.body.setAttribute('data-anima-scroll', '')
     }
