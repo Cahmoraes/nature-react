@@ -20,6 +20,7 @@ export const TabMenu = styled.ul`
   text-align: center;
   margin: 20px 0 40px 0;
   opacity: 0;
+  visibility: hidden;
   transform: translate3d(0, -30px, 0);
   transition: .3s ease-in;
 
