@@ -19,6 +19,7 @@ export default createGlobalStyle`
   img {
     max-width: 100%;
     display: block;
+    width: 100%;
   }
 
   ul {
